@@ -1,2 +1,3 @@
 # projet d'informatique scientifique
-Projet de fin de cycle de la licence maths-informatique.
+Ce projet s'inscrit dans le cadre du module projet-d'informatique-scientifique de la licence mathématique-informatique. Intitulé PATHFINDING, il consiste à concevoir des algorithmes de plus court chemins tels que BSF, DIJKSTRA, ASTAR, GLOUTON etc qui permettent d'atteindre un point d'arrivée tout en évitant les obstacles. 
+Il est composé de 6 fichiers: le fichier graphe.jl qui construit le graphe à partir du fichier map entrée, le fichier main.jl qui est le point d'entrée du programme , les 4 autres fichiers contiennent respectivement les 4 algorithmes précédemment cités. 
