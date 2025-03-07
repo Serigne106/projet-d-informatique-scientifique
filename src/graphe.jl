@@ -19,8 +19,8 @@ function lire_carte(fichier_carte::String)
     nb_lignes = length(carte)
     nb_colonnes = length(carte[1])
     # Coût des cases
-    cout_cases = Dict{Char, Float64}('@' => Inf, '.' => 1.0, 'S' => 5.0, 'W' => 8.0)
-    car_non_def = 1.0  # Valeur par défaut pour les caractères inconnus
+    #cout_cases = Dict{Char, Float64}('@' => Inf, '.' => 1.0, 'S' => 5.0, 'W' => 8.0)
+    #car_non_def = 1.0  # Valeur par défaut pour les caractères inconnus
     # Structure pour stocker le graphe : dictionnaire de vecteurs de tuples
     graphe = Dict{Tuple{Int,Int}, Vector{Tuple{Tuple{Int,Int}, Float64}}}()
     # Parcourir la carte et ajouter les arêtes
@@ -37,7 +37,7 @@ function lire_carte(fichier_carte::String)
             # Ajouter les voisins valides
             for (vi, vj) in voisins
                 if 1 <= vi <= nb_lignes && 1 <= vj <= nb_colonnes
-                    cout = get(cout_cases, carte[vi][vj], car_non_def)
+                    cout = valuation(carte[vi][vj])
                     push!(graphe[sommet], ((vi, vj), cout))
                 end
             end
@@ -91,3 +91,17 @@ end
 function heuristique(sommet_actuel, arrivee)
     return abs(sommet_actuel[1] - arrivee[1]) + abs(sommet_actuel[2] - arrivee[2])
 end
+
+function valuation(car::Char)
+    if car == '@'
+        return Inf
+    elseif car == 'S'
+       return 5.0
+    elseif car == 'W'
+       return 8.0
+    elseif car == '.'
+       return 1.0
+    else
+      return 1.0
+     end
+  end
