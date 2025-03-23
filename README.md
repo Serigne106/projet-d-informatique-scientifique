@@ -15,7 +15,7 @@ STRUCTURATION DU PROJET
 
 Le projet se trouve dans le repertoire 'projet-d-informatique-scientifique' qui contient lui meme 3  sous répertoire: src, documentation et data. Dans src, vous y trouverez les fichiers sources du projet. dans documentation, il y a le rapport qui resume l'étude comparative des différents algorithmes et dans data il y a differents types de fichiers pour tester lke projet.
 
-|-- Projet-d-informatique-scientifique
+|-- Projet-d-informatique-scientifique \n
   |-- src
       |- main.jl : Construit le graphe à partir d'un fichier `.map` (carte) en entrée.
       |- graphe.jl : Point d'entrée du programme. Permet de choisir l'algorithme à exécuter.
