@@ -41,7 +41,7 @@ il y a differents types de fichiers pour tester le projet.
   |- test.map    
   
 
-__UTILISATION__    [Presentation (2).pdf](https://github.com/user-attachments/files/19491929/Presentation.2.pdf)
+__UTILISATION__    
 
 
 Pour lancer le programme, veuillez suivre les étapes suivantes:
