@@ -17,7 +17,6 @@ sont :
 2) DIJKSTRA  
 3) ASTAR  
 4) ASTAR_PONDERER
-5) 
 
 __STRUCTURATION DU PROJET__
 
@@ -42,7 +41,8 @@ il y a differents types de fichiers pour tester le projet.
   |- test.map    
   
 
-__UTILISATION__    
+__UTILISATION__    [Presentation (2).pdf](https://github.com/user-attachments/files/19491929/Presentation.2.pdf)
+
 
 Pour lancer le programme, veuillez suivre les étapes suivantes:
 1) Ouvrez le REPL de Julia.
