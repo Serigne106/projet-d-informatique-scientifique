@@ -16,7 +16,9 @@ sont :
 1) BFS  
 2) DIJKSTRA  
 3) ASTAR  
-4) ASTAR_PONDERER  
+4) ASTAR_PONDERER
+5) 
+
 __STRUCTURATION DU PROJET__
 
 Le projet se trouve dans le repertoire projet-d-informatique-scientifique qui
@@ -43,7 +45,8 @@ il y a differents types de fichiers pour tester le projet.
 
 
 
-__UTILISATION__  
+__UTILISATION__    
+
 Pour lancer le programme, veuillez suivre les étapes suivantes:
 1) Ouvrez le REPL de Julia.
 2) taper include("main.jl") pour démarrer le programme
@@ -51,4 +54,5 @@ Pour lancer le programme, veuillez suivre les étapes suivantes:
 Pour changer les points de depart et d'arrivée ou le poids dans astar_pondere,
 aller dans le fichier main.jl qui se trouve dans le repertoire src et mettez vos
 valeur souhaitées dans depart, arrivée , w et/ou fichier_carte pour changer de
-carte.
+carte.  
+NB: Avant de lancer le programme, assurer vous d'avoir le fichier map que vous voulez lancer dans le répertoire src
