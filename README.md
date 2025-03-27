@@ -25,23 +25,25 @@ y trouverez les fichiers sources du projet. dans documentation, il y a le
 rapport qui resume l'étude comparative des différents algorithmes et dans data
 il y a differents types de fichiers pour tester le projet.  
 
-|-- Projet-d-informatique-scientifique  
-|-- src  
+|-- __Projet-d-informatique-scientifique__  
+|-- __src__  
   |- graphe.jl : Construit le graphe à partir d'un fichier .map en entrée.  
   |- main.jl : Point d'entrée du programme.choix de l'algorithme à exécuter.    
   |- bfs.jl  : Implémentation de l'algorithme BFS.  
   |- dijkstra.jl : Implémentation de l'algorithme de Dijkstra.  
   |- astar.jl  : Implémentation de l'algorithme Astar.    
   |- astar_pondere : implementation de l'algorithme Astar_pondere    
-|-- documentation    
+|-- __documentation__    
   | rapport du projet    
-|-- data    
+|-- __data__    
   |- theglaive.map   
-  |- test.map  
+  |- test.map    
+  
+
+
 
 
 __UTILISATION__  
-
 Pour lancer le programme, veuillez suivre les étapes suivantes:
 1) Ouvrez le REPL de Julia.
 2) taper include("main.jl") pour démarrer le programme
