@@ -1,25 +1,36 @@
-__PROJET PATHFINDING__
+__PROJET PATHFINDING__  
+
 Ce projet s'inscrit dans le cadre du module "Projet d'Informatique Scientifique"
 de la licence mathématique et informatique de l'université de Nantes. Il
 consiste à concevoir et implémenter des algorithmes de recherche de plus court
 chemin, tels que Bfs, Dijkstra, Astar, pour atteindre un point d'arrivée tout en
 évitant les obstacles.
-OBJECTIF
+
+__OBJECTIF__  
+
 L'objectif de ce projet est de comparer les performances des différents
 algorithmes de recherche de plus court chemin en termes de distance parcourue,
 de nombre de nœuds visités et de temps d'exécution. Les algorithmes implémentés
-sont :
+sont :  
+
 1) BFS
-2) DIJKSTRA
-3) ASTAR
-4) ASTAR_PONDERER
-STRUCTURATION DU PROJET
+2) 
+3) DIJKSTRA
+4) 
+5) ASTAR
+6) 
+7) ASTAR_PONDERER
+8) 
+__STRUCTURATION DU PROJET__
+
 Le projet se trouve dans le repertoire projet-d-informatique-scientifique qui
 contient lui meme 3 sous répertoire: src, documentation et data. Dans src, vous
 y trouverez les fichiers sources du projet. dans documentation, il y a le
 rapport qui resume l'étude comparative des différents algorithmes et dans data
-il y a differents types de fichiers pour tester le projet.
-|-- Projet-d-informatique-scientifique
+il y a differents types de fichiers pour tester le projet.  
+
+|-- Projet-d-informatique-scientifique  
+
 |-- src
 |- graphe.jl : Construit le graphe à partir d'un fichier .map en entrée.
 |- main.jl : Point d'entrée du programme.choix de l'algorithme à exécuter.
