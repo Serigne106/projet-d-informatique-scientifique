@@ -13,14 +13,10 @@ algorithmes de recherche de plus court chemin en termes de distance parcourue,
 de nombre de nœuds visités et de temps d'exécution. Les algorithmes implémentés
 sont :  
 
-1) BFS
-2) 
-3) DIJKSTRA
-4) 
-5) ASTAR
-6) 
-7) ASTAR_PONDERER
-8) 
+1) BFS  
+2) DIJKSTRA  
+3) ASTAR  
+4) ASTAR_PONDERER  
 __STRUCTURATION DU PROJET__
 
 Le projet se trouve dans le repertoire projet-d-informatique-scientifique qui
@@ -30,10 +26,9 @@ rapport qui resume l'étude comparative des différents algorithmes et dans data
 il y a differents types de fichiers pour tester le projet.  
 
 |-- Projet-d-informatique-scientifique  
-
-|-- src
-|- graphe.jl : Construit le graphe à partir d'un fichier .map en entrée.
-|- main.jl : Point d'entrée du programme.choix de l'algorithme à exécuter.
+|-- src  
+|- graphe.jl : Construit le graphe à partir d'un fichier .map en entrée.  
+|- main.jl : Point d'entrée du programme.choix de l'algorithme à exécuter.  
 |- bfs.jl
 : Implémentation de l'algorithme BFS.
 |- dijkstra.jl : Implémentation de l'algorithme de Dijkstra.
@@ -45,7 +40,7 @@ il y a differents types de fichiers pour tester le projet.
 |-- data
 |- theglaive.map
 |- test.map
-UTILISATION
+__UTILISATION__
 Pour lancer le programme, veuillez suivre les étapes suivantes:
 1) Ouvrez le REPL de Julia.
 2) taper include("main.jl") pour démarrer le programme
