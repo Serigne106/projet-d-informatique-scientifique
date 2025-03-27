@@ -14,7 +14,7 @@ function main()
     #depart = (12, 5)
     #arrivee = (2, 12)
     
-    w = 0.0
+    w = 1.0
     fichier_map = "theglaive.map"
     #fichier_map = "test.map"
 
