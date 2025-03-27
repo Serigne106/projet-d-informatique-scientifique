@@ -4,7 +4,7 @@ Ce projet s'inscrit dans le cadre du module "Projet d'Informatique Scientifique"
 
 OBJECTIF
 
-L'objectif de ce projet est de comparer les performances des différents algorithmes de recherche de chemin en termes de distance parcourue, de nombre de nœuds visités et de temps d'exécution. Les algorithmes implémentés sont :
+L'objectif de ce projet est de comparer les performances des différents algorithmes de recherche de plus court chemin en termes de distance parcourue, de nombre de nœuds visités et de temps d'exécution. Les algorithmes implémentés sont :
 
 1) BFS
 2) DIJKSTRA
