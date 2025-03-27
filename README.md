@@ -26,8 +26,8 @@ y trouverez les fichiers sources du projet. dans documentation, il y a le
 rapport qui resume l'étude comparative des différents algorithmes et dans data
 il y a differents types de fichiers pour tester le projet.  
 
-|-- 📂Projet-d-informatique-scientifique
-|-- 📂src 
+|-- 📂Projet-d-informatique-scientifique  
+|-- 📂src  
   |- graphe.jl : Construit le graphe à partir d'un fichier .map en entrée.  
   |- main.jl : Point d'entrée du programme.Permet de choisir l'algorithme à exécuter.    
   |- bfs.jl  : Implémentation de l'algorithme BFS.  
@@ -49,8 +49,8 @@ Pour lancer le programme, veuillez suivre les étapes suivantes:
 2) taper include("main.jl") pour démarrer le programme
 3) choisissez l'algorithme que vous voulez lancer.
 
-Pour changer les points de depart et d'arrivée ou le poids dans astar_pondere,
-aller dans le fichier main.jl qui se trouve dans le repertoire src et mettez vos
+Pour changer les points de depart et d'arrivée ou le poids dans astar_pondere,  
+aller dans le fichier main.jl qui se trouve dans le repertoire src et mettez vos  
 valeur souhaitées dans depart, arrivée , w et/ou fichier_carte pour changer de
 carte.  
-NB: Avant de lancer le programme, assurer vous d'avoir le fichier map que vous voulez lancer dans le répertoire src
+NB: Avant de lancer le programme, assurer vous d'avoir le fichier   map que vous voulez lancer dans le répertoire src
