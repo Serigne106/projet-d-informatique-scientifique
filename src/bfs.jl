@@ -1,11 +1,11 @@
 include("graphe.jl")
 using DataStructures
 
-function bfs(graphe::String, depart::Tuple{Int,Int}, arrivee::Tuple{Int,Int})
+function bfs(graphe::String, depart::Tuple{Int64,Int64}, arrivee::Tuple{Int64,Int64})
     # Lire le graphe à partir du fichier
     G = lire_carte(graphe)
      # Vérifier que le sommet de départ existe dans le graphe
-     if !haskey(G, depart) #
+     if !haskey(G, depart) 
         println("Erreur : Le sommet de départ n'existe pas dans le graphe.")
         return
      end
@@ -15,11 +15,11 @@ function bfs(graphe::String, depart::Tuple{Int,Int}, arrivee::Tuple{Int,Int})
         return
      end
     # Créer une file FIFO pour explorer les sommets
-    file = Queue{Tuple{Int, Int}}() 
+    file = Queue{Tuple{Int64, Int64}}() 
     # Ensemble des sommets visités 
-    visites = Set{Tuple{Int, Int}}()  
+    visites = Set{Tuple{Int64, Int64}}()  
     # Dictionnaire pour stocker les prédécesseurs de chaque sommet
-    predecesseur = Dict{Tuple{Int, Int}, Tuple{Int, Int}}()
+    predecesseur = Dict{Tuple{Int64, Int64}, Tuple{Int64, Int64}}()
     # Ajouter le sommet de départ à la file et le marquer comme visité
     enqueue!(file, depart)  
     push!(visites, depart)  
@@ -39,10 +39,12 @@ function bfs(graphe::String, depart::Tuple{Int,Int}, arrivee::Tuple{Int,Int})
             afficher_chemin(chemin)
             return 
         end
-        # Récupérer les successeurs de u dans G
-        S = get_voisins(G, u)  
 
-        for (s, _) in S
+        # Récupérer les successeurs de u dans G
+        S = [voisin for (voisin, _) in get_voisins(G, u)]
+        #S = get_voisins(G, u)  
+
+        for s in S
             if !(s in visites)
                 # Ajouter le successeur à la file 
                 enqueue!(file, s)  

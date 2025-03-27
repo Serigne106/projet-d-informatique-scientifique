@@ -1,14 +1,14 @@
 include("graphe.jl")
 using DataStructures
 
-function Dijkstra(graphe::String, depart::Tuple{Int, Int}, arrivee::Tuple{Int, Int})
+function Dijkstra(graphe::String, depart::Tuple{Int64, Int64}, arrivee::Tuple{Int64, Int64})
     # Lire le graphe à partir du fichier
     G = lire_carte(graphe)
     # Vérifier que le sommet de départ existe dans le graphe
     if !haskey(G, depart) 
         println("Erreur : Le sommet de départ n'existe pas dans le graphe.")
         return
-    end
+    end 
     # Vérifier que le sommet d'arrivée existe dans le graphe
     if !haskey(G, arrivee) 
         println("Erreur : Le sommet d'arrivée n'existe pas dans le graphe.")
@@ -16,10 +16,10 @@ function Dijkstra(graphe::String, depart::Tuple{Int, Int}, arrivee::Tuple{Int, I
     end
 
     # Déclaration des structures de données
-    distances = Dict{Tuple{Int, Int}, Float64}()  # Distances minimales
-    precedents = Dict{Tuple{Int, Int}, Tuple{Int, Int}}()  # Chemin optimal
-    permanents = Dict{Tuple{Int, Int}, Bool}()  # Sommets permanents (true si permanent)
-    a_explorer = PriorityQueue{Tuple{Int, Int}, Float64}()  # File de priorité
+    distances = Dict{Tuple{Int64, Int64}, Float64}()  # Distances minimales
+    precedents = Dict{Tuple{Int64, Int64}, Tuple{Int64, Int64}}()  # Chemin optimal
+    permanents = Dict{Tuple{Int64, Int64}, Bool}()  # Sommets permanents (true si permanent)
+    a_explorer = PriorityQueue{Tuple{Int64, Int64}, Float64}()  # File de priorité
 
     # Initialisation des structures de données
     for sommet in keys(G)
@@ -66,11 +66,13 @@ function Dijkstra(graphe::String, depart::Tuple{Int, Int}, arrivee::Tuple{Int, I
     end
 
     # Vérifier si l'arrivée est accessible
+    
     if !permanents[arrivee]
         println("Le sommet d'arrivée n'est pas accessible depuis le sommet de départ.")
         println("Le nombre de sommets visités est : $nb_sommets_visites")
         return
     end
+    
 
     # Reconstruire le chemin optimal
     chemin = reconstruire_chemin(precedents, depart, arrivee)

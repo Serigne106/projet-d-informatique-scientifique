@@ -1,8 +1,9 @@
+
 # Importation des structures de données nécessaires
 using DataStructures: PriorityQueue, enqueue!, dequeue!
 include("graphe.jl")
 
-function Astar(graphe::String, depart::Tuple{Int, Int}, arrivee::Tuple{Int, Int})
+function Astar(graphe::String, depart::Tuple{Int64, Int64}, arrivee::Tuple{Int64, Int64})
     # Lire le graphe à partir du fichier
     G = lire_carte(graphe)
      # Vérifier que le sommet de départ existe dans le graphe
@@ -17,15 +18,15 @@ function Astar(graphe::String, depart::Tuple{Int, Int}, arrivee::Tuple{Int, Int}
      end
 
     # File de priorité pour stocker les sommets à explorer avec leur coût estimé
-    file_priorite = PriorityQueue{Tuple{Int, Int}, Float64}()
+    file_priorite = PriorityQueue{Tuple{Int64, Int64}, Float64}()
     enqueue!(file_priorite, depart, 0.0)
     # Dictionnaire pour stocker les prédécesseurs de chaque nœud
-    predecesseurs = Dict{Tuple{Int, Int}, Tuple{Int, Int}}()
+    predecesseurs = Dict{Tuple{Int64, Int64}, Tuple{Int64, Int64}}()
     # Dictionnaire pour stocker le coût réel de chaque sommet
-    cout_reel = Dict{Tuple{Int, Int}, Float64}()
+    cout_reel = Dict{Tuple{Int64, Int64}, Float64}()
     cout_reel[depart] = 0.0  # Coût réel du départ est 0
     # Dictionnaire pour stocker le coût estimé de chaque sommet
-    cout_estime = Dict{Tuple{Int, Int}, Float64}()
+    cout_estime = Dict{Tuple{Int64, Int64}, Float64}()
     cout_estime[depart] = heuristique(depart, arrivee)  # Coût estimé du départ
     # initialisation du nombre de sommets visités
     nb_sommets_visites = 0
@@ -63,7 +64,6 @@ function Astar(graphe::String, depart::Tuple{Int, Int}, arrivee::Tuple{Int, Int}
                 # Met à jour le coût estimé du voisin
                 cout_estime[voisin] = cout_reel[voisin] + heuristique(voisin, arrivee)
                
-    
                if voisin in keys(file_priorite)
                 # Mettre à jour la priorité du nœud existant
                 file_priorite[voisin] = cout_estime[voisin]
@@ -80,3 +80,5 @@ function Astar(graphe::String, depart::Tuple{Int, Int}, arrivee::Tuple{Int, Int}
     println("Aucun chemin trouvé entre ($(depart[1]), $(depart[2])) et ($(arrivee[1]), $(arrivee[2]))")
     println("Le nombre de sommets visités est            : $nb_sommets_visites")
 end
+
+
