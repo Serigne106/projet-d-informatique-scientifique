@@ -26,17 +26,17 @@ y trouverez les fichiers sources du projet. dans documentation, il y a le
 rapport qui resume l'étude comparative des différents algorithmes et dans data
 il y a differents types de fichiers pour tester le projet.  
 
-|-- __Projet-d-informatique-scientifique__  
-|-- __src__  
+|-- 📂__Projet-d-informatique-scientifique__  
+|-- 📂__src__  
   |- graphe.jl : Construit le graphe à partir d'un fichier .map en entrée.  
-  |- main.jl : Point d'entrée du programme.choix de l'algorithme à exécuter.    
+  |- main.jl : Point d'entrée du programme.Permet de choisir l'algorithme à exécuter.    
   |- bfs.jl  : Implémentation de l'algorithme BFS.  
   |- dijkstra.jl : Implémentation de l'algorithme de Dijkstra.  
   |- astar.jl  : Implémentation de l'algorithme Astar.    
   |- astar_pondere : implementation de l'algorithme Astar_pondere    
-|-- __documentation__    
+|-- 📂__documentation__    
   | rapport du projet    
-|-- __data__    
+|-- 📂__data__    
   |- theglaive.map   
   |- test.map    
   
@@ -48,6 +48,7 @@ Pour lancer le programme, veuillez suivre les étapes suivantes:
 1) Ouvrez le REPL de Julia.
 2) taper include("main.jl") pour démarrer le programme
 3) choisissez l'algorithme que vous voulez lancer.
+
 Pour changer les points de depart et d'arrivée ou le poids dans astar_pondere,
 aller dans le fichier main.jl qui se trouve dans le repertoire src et mettez vos
 valeur souhaitées dans depart, arrivée , w et/ou fichier_carte pour changer de
