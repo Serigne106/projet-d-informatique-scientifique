@@ -3,7 +3,7 @@ __PROJET PATHFINDING__
 Ce projet s'inscrit dans le cadre du module "Projet d'Informatique Scientifique"
 de la licence mathématique et informatique de l'université de Nantes. Il
 consiste à concevoir et implémenter des algorithmes de recherche de plus court
-chemin, tels que Bfs, Dijkstra, Astar, pour atteindre un point d'arrivée tout en
+chemin, tels que Bfs, Dijkstra, Astar etc pour atteindre un point d'arrivée tout en
 évitant les obstacles.
 
 __OBJECTIF__  
@@ -41,9 +41,6 @@ il y a differents types de fichiers pour tester le projet.
   |- theglaive.map   
   |- test.map    
   
-
-
-
 
 __UTILISATION__    
 
