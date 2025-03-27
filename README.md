@@ -26,17 +26,17 @@ y trouverez les fichiers sources du projet. dans documentation, il y a le
 rapport qui resume l'étude comparative des différents algorithmes et dans data
 il y a differents types de fichiers pour tester le projet.  
 
-|-- 📂__Projet-d-informatique-scientifique__  
-|-- 📂__src__  
+|-- 📂Projet-d-informatique-scientifique
+|-- 📂src 
   |- graphe.jl : Construit le graphe à partir d'un fichier .map en entrée.  
   |- main.jl : Point d'entrée du programme.Permet de choisir l'algorithme à exécuter.    
   |- bfs.jl  : Implémentation de l'algorithme BFS.  
   |- dijkstra.jl : Implémentation de l'algorithme de Dijkstra.  
   |- astar.jl  : Implémentation de l'algorithme Astar.    
   |- astar_pondere : implementation de l'algorithme Astar_pondere    
-|-- 📂__documentation__    
+|-- 📂documentation   
   | rapport du projet    
-|-- 📂__data__    
+|-- 📂data   
   |- theglaive.map   
   |- test.map    
   
