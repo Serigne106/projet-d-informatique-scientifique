@@ -1,4 +1,4 @@
-*PROJET PATHFINDING*
+__PROJET PATHFINDING__
 Ce projet s'inscrit dans le cadre du module "Projet d'Informatique Scientifique"
 de la licence mathématique et informatique de l'université de Nantes. Il
 consiste à concevoir et implémenter des algorithmes de recherche de plus court
